@@ -15,6 +15,7 @@ public class ProdutorService {
     public Produtor salvar(Produtor entity) throws Exception {
         if (repository.findByCnpj(entity.getCnpj()) != null){
             throw new Exception("Cpf ja cadastrado");
+
         }
 
         return repository.save(entity);

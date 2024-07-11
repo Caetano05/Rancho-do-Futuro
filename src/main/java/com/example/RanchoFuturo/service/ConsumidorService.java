@@ -13,8 +13,7 @@ public class ConsumidorService {
     @Autowired
     private ConsumidorRepository repositoryConsumidor;
 
-    public Consumidor salvar(Consumidor entity) {
-        return repositoryConsumidor.save(entity);
+    public Consumidor salvar(Consumidor entity) { return repositoryConsumidor.save(entity);
     }
 
     public List<Consumidor> buscaTodos() {

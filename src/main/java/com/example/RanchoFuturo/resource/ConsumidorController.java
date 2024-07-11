@@ -25,8 +25,8 @@ public class ConsumidorController {
 
     @GetMapping
     public  ResponseEntity findAll(){
-        List<Consumidor> clientes =serviceConsumidor.buscaTodos();
-        return ResponseEntity.ok(clientes);
+        List<Consumidor> consumidores =serviceConsumidor.buscaTodos();
+        return ResponseEntity.ok(consumidores);
     }
     @GetMapping("/{id}")
     public  ResponseEntity findById(@PathVariable("id") Long id){
