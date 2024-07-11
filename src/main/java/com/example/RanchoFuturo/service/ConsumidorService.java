@@ -33,6 +33,7 @@ public class ConsumidorService {
             consumidor.setTelefone(alterado.getTelefone());
             return repositoryConsumidor.save(consumidor);
         }
+
         return null;
     }
 
